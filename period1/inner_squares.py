@@ -28,6 +28,7 @@ window.bgcolor("lightgreen")
 fiza = turtle.Turtle()
 fiza.color("red")
 fiza.pensize(4)
+fiza.speed(1)
 
 draw_square_from_centre(fiza, 150)
 draw_square_from_centre(fiza, 200)
