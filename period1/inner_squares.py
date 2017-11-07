@@ -1,7 +1,7 @@
 import turtle
 
 def draw_square_from_centre(some_turtle, side_length):
-    
+    """Draws a square, beginning in the centre of the square, and ending once again in the centre."""
     #go to starting location
     some_turtle.up()
     for i in range(2):
