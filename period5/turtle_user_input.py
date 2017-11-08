@@ -20,4 +20,9 @@ camila = turtle.Turtle()
 camila.color("pink")
 camila.pensize(4)
 
-draw_hexagon_with_triangles(camila, 150)
+
+shape = turtle.textinput("Shape", "Do you want a 'triangle' or a 'hexagon'?")
+if shape == "triangle":
+    draw_triangle(camila, 150)
+elif shape == "hexagon":
+    draw_hexagon_with_triangles(camila, 150)
