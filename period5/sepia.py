@@ -11,6 +11,12 @@ height = cat.getHeight()
 # make a window to draw on
 the_window = image.ImageWin("Funny looking cat", width, height)
 
+coords = the_window.getMouse()
+x_value = coords[0]
+y_value = coords[1]
+print("x:", x_value, "   y:", y_value)
+
+
 # use a nested for loop to look at every pixel in the image
 for y in range(height):
     for x in range(width):
