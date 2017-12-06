@@ -1,25 +1,63 @@
 <html>
     <head>
         <title>Test Page</title>
+        <style media="screen">
+          body {
+            background-color: rgb(211, 190, 171);
+          }
+          #linker {
+            color: green;
+          }
+          ul#nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+          }
+          li {
+            float: left;
+          }
+          li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+          }
+          li a:hover {
+            background-color: white;
+            color: black;
+          }
+          #maincontent {
+            margin-top: 50px;
+          }
+        </style>
     </head>
     <body>
-        <ul>
+        <ul id="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
 
-        <h1>Hello Comp Sci 20</h1>
-        <h2>Intro</h2>
-        <p>A simple paragraph of text</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg" alt="Lolcat about computer files.">
-        <p>Another paragraph of text with a link to <a href="https://duckduckgo.com/">DuckDuckGo</a>.</p>
+        <div id="maincontent">
+          <h1>Hello Comp Sci 20</h1>
+          <a href="#linker">Jump to the linker paragraph.</a>
+          <h2>Intro</h2>
+          <p>A simple paragraph of text</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg" alt="Lolcat about computer files.">
+          <p id="linker">Another paragraph of text with a link to <a href="https://duckduckgo.com/">DuckDuckGo</a>.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <h2>More Information</h2>
-        <p>There is lots of information here.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/weuz6Imoll0" frameborder="0" allowfullscreen></iframe>
+          <h2>More Information</h2>
+          <p>There is lots of information here.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/weuz6Imoll0" frameborder="0" allowfullscreen></iframe>
 
-        <h2>Gifs are Fun</h2>
-        <iframe src="https://giphy.com/embed/fXgKfzV4aaHQI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-cat-mountain-good-job-fXgKfzV4aaHQI">via GIPHY</a></p>
-
+          <h2>Gifs are Fun</h2>
+          <iframe src="https://giphy.com/embed/fXgKfzV4aaHQI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-cat-mountain-good-job-fXgKfzV4aaHQI">via GIPHY</a></p>
+        </div>
     </body>
 </html>
